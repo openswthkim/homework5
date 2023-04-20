@@ -18,7 +18,7 @@ typedef enum {
    lparen = 0,  /* ( 왼쪽 괄호 */
    rparen = 9,  /* ) 오른쪽 괄호*/
    times = 7,   /* * 곱셈 */
-   divide = 6;  /* / 나눗셈 */
+   divide = 6,  /* / 나눗셈 */
    plus = 5,    /* + 덧셈 */
    minus = 4,   /* - 뺄셈 */
    operand = 1 /* 피연산자 */
@@ -70,7 +70,6 @@ int main()
          getInfix(); // getInfix 함수 호출
          break;
       case 'p': case 'P': // p일 경우
-         if (count == 0)   //추가
          toPostfix();
          break;
       case 'e': case 'E': // e일 경우
